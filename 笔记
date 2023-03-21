@@ -1,0 +1,39 @@
+# 入门
+
+ELK  ES分布式搜索引擎
+
+9300内部通信端口，9200 外部访问端口
+
+RESTFUL风格
+
+URI， 
+
+# linux 连接ssh
+
+```liunx
+sudo apt install openssh-server
+sudo service ssh start
+sudo ps -aux | grep sshd
+```
+
+# linux 日志路径
+
+```linux
+/var/log/
+```
+
+
+
+es配置
+
+```liunx
+network.host: 0.0.0.0
+discovery.seed_hosts:  ["127.0.0.1", "[::1]"]
+```
+
+# go 设置环境变量不生效
+
+```go
+go env -w CGO_ENABLED=1
+```
+
